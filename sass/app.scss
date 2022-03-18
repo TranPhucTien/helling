@@ -125,6 +125,19 @@ body {
 	&-image {
 		transform: translate(0, 78px);
 	}
+	@media screen and (min-width: 1023.98px) {
+		.container {
+			position: relative;
+		}
+		&-image {
+			&-small {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transform: translateY(87px);
+			}
+		}
+	}
 	@media screen and (max-width: 1023.98px) {
 		&-contact {
 			margin-left: auto;
@@ -211,7 +224,7 @@ body {
 	gap: 5rem;
 	list-style: none;
 	font-size: 1.8rem;
-    padding: 0;
+	padding: 0;
 	&-link {
 		color: var(--gray);
 		opacity: 0.4;
@@ -227,13 +240,13 @@ body {
 		padding: 0;
 		margin: 0;
 		background-color: transparent;
-        padding: 10px;
-        box-sizing: content-box;
-        position: relative;
-        z-index: 9;
+		padding: 10px;
+		box-sizing: content-box;
+		position: relative;
+		z-index: 9;
 		cursor: pointer;
 		span {
-            pointer-events: none;
+			pointer-events: none;
 			height: 3px;
 			width: 100%;
 			background-color: var(--secondary-color);
@@ -243,28 +256,28 @@ body {
 		}
 	}
 	@media screen and (max-width: 1023.98px) {
-        --spacing: 10px;
+		--spacing: 10px;
 		position: fixed;
 		top: var(--spacing);
 		right: var(--spacing);
 		bottom: var(--spacing);
-        border-radius: 8px;
+		border-radius: 8px;
 		width: 300px;
 		background-color: white;
 		z-index: 9;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-        transform: translateX(150%);
-        &.is-active {
-            transform: translateX(0);
-        }
-        &-link {
-            color: var(--primary-color);
-            display: block;
-            padding: 15px;
-        }
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+		transform: translateX(150%);
+		&.is-active {
+			transform: translateX(0);
+		}
+		&-link {
+			color: var(--primary-color);
+			display: block;
+			padding: 15px;
+		}
 		&-toggle {
 			display: inline-flex;
 			flex-direction: column;

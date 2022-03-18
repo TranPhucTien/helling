@@ -134,6 +134,17 @@ body {
 .header-image {
   transform: translate(0, 78px);
 }
+@media screen and (min-width: 1023.98px) {
+  .header .container {
+    position: relative;
+  }
+  .header-image-small {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(87px);
+  }
+}
 @media screen and (max-width: 1023.98px) {
   .header-contact {
     margin-left: auto;
