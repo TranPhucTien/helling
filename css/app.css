@@ -140,7 +140,7 @@ body {
   }
   .header-image-small {
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 0;
     transform: translateY(87px);
   }
