@@ -586,6 +586,8 @@ body {
   }
   .footer-bottom {
     margin-bottom: 30px 0;
+    padding-top: 8px;
+    font-size: 18px;
   }
   .footer-info {
     margin-bottom: 40px;
